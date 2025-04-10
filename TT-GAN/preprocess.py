@@ -8,7 +8,7 @@ from sklearn.preprocessing import OrdinalEncoder, KBinsDiscretizer
 
 # Argument parser
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung"], default="breast")
+parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung", "ckd"], default="breast")
 args = parser.parse_args()
 
 # Load data

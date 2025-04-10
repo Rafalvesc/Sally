@@ -17,7 +17,7 @@ from alive_progress import alive_bar
 
 # Argument parser
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung"], default="breast")
+parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung", "ckd"], default="breast")
 parser.add_argument('--model', choices=["CTGAN-O", "CopulaGAN-O", "TTGAN-O", "CTGAN-CAT", "CopulaGAN-CAT", "TTGAN-CAT"], default="CTGAN-O")
 parser.add_argument('--predictor', choices=["RF", "CB", "XGB", "LGBM"], default="RF")
 parser.add_argument('--validator', choices=["RF", "CB", "XGB", "LGBM"], default="RF")
@@ -43,6 +43,8 @@ elif args.name == "diabetes":
     num_samples = 71234
 elif args.name == "mimic":
     num_samples = 309006
+elif args.name == "ckd":
+    num_samples = 400
 
 # Number of epochs
 epochs = 2000

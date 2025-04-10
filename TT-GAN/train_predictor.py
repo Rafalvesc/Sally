@@ -14,7 +14,7 @@ from lightgbm import LGBMRegressor
 
 # Argument parser
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung"], default="breast")
+parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung", "ckd"], default="breast")
 parser.add_argument('--model', choices=["RF", "CB", "XGB", "LGBM"], default="RF")
 args = parser.parse_args()
 

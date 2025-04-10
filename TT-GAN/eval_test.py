@@ -18,7 +18,7 @@ from sklearn.metrics import roc_auc_score
 
 # Argument parser
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', choices=["breast", "lung", "liver", "diabetes", "mimic"], default="breast")
+parser.add_argument('--name', choices=["breast", "lung", "liver", "diabetes", "mimic", "ckd"], default="breast")
 parser.add_argument('--validator', choices=["RF", "CB", "XGB", "LGBM"], default="RF")
 args = parser.parse_args()
 

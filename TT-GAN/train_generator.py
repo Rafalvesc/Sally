@@ -13,7 +13,7 @@ from ttgan.synthesizer import TTGANWrapper
 
 # Argument parser
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung"], default="breast")
+parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung", "ckd" ], default="breast")
 parser.add_argument('--model', choices=["CTGAN-O", "CopulaGAN-O", "TTGAN-O", "CTGAN-CAT", "CopulaGAN-CAT", "TTGAN-CAT"], default="CTGAN-O")
 args = parser.parse_args()
 
@@ -36,12 +36,19 @@ if model_name in ["CTGAN", "CopulaGAN", "TTGAN"]:
 if model_name == "TTGAN":
     columns = json.load(open(f"data/original/{args.name}/columns.json", "r"))
     numerical_columns = []
+    
+    if args.name == "ckd":
+        target = "ckd"  # Definindo explicitamente se o dataset for 'ckd'
+    else:
+        target = next((col["name"] for col in columns if "target" in col["name"].lower()), None)
+    
+    if target is None:
+        raise ValueError("Nenhuma coluna foi identificada como target.")
+    
     for index, column in enumerate(columns):
-        if "target" in column:
-            target = column["name"]
         if column["type"] == "numerical":
             numerical_columns.append(index)
-
+            
 # Model
 if model_name == "CTGAN":
     model = CTGANSynthesizer(

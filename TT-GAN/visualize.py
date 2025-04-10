@@ -11,7 +11,7 @@ from pathlib import Path
 
 # Argument parser
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung", "diabetes"], default="breast")
+parser.add_argument('--name', choices=["breast", "liver", "mimic", "lung", "diabetes", "ckd"], default="breast")
 parser.add_argument('--validator', choices=["RF", "CB", "XGB", "LGBM"], default="RF")
 args = parser.parse_args()
 

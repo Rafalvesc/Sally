@@ -1,0 +1,128 @@
+[
+    {
+        "name": "age",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "bp",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "sg",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "al",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "su",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "rbc",
+        "type": "numerical",
+        "dtype": "int"
+    },
+    {
+        "name": "pc",
+        "type": "numerical",
+        "dtype": "int"
+    },
+    {
+        "name": "pcc",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "ba",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "bgr",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "bu",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "sc",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "sod",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "pot",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "hemo",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "pcv",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "wbcc",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "rbcc",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "htn",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "dm",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "cad",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "appet",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "pe",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "ane",
+        "type": "numerical",
+        "dtype": "float"
+    },
+    {
+        "name": "ckd",
+        "type": "numerical",
+        "dtype": "float",
+        "target": true
+    }
+]
